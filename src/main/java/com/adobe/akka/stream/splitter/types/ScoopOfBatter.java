@@ -15,4 +15,8 @@ public class ScoopOfBatter {
     public String toString() {
         return "ScoopOfBatter(" + index + ")";
     }
+
+    public HalfCookedPancake cook() {
+        return new HalfCookedPancake(index);
+    }
 }

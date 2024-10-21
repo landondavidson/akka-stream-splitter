@@ -1,15 +1,14 @@
 package com.adobe.akka.stream.splitter.types;
 
 public class HalfCookedPancake {
-    private final int index;
+    protected final int index;
 
     public HalfCookedPancake(int index) {
         this.index = index;
     }
 
     public static HalfCookedPancake fromBatter(ScoopOfBatter batter) {
-        return new HalfCookedPancake(batter.getIndex()) {
-        };
+        return batter.cook();
     }
 
     public Pancake complete() {
