@@ -26,16 +26,43 @@ server-1  | Frying pan 1: ScoopOfBatter(0)
 server-1  | Frying pan 1: ScoopOfBatter(1)
 server-1  | Frying pan 1: ScoopOfBatter(2)
 server-1  | Frying pan 1: ScoopOfBatter(3)
-server-1  | Frying pan 2: HalfCookedPancake(0)
 server-1  | Frying pan 2: HalfCookedPancake(1)
-server-1  | Frying pan 2: HalfCookedPancake(2)
+server-1  | Pancake ready: Pancake(0)
+server-1  | Frying pan 2: HalfCookedPancake(0)
 server-1  | Frying pan 2: HalfCookedPancake(3)
-server-1  | Pancake(0)
-server-1  | Pancake(1)
-server-1  | Pancake(2)
-server-1  | Pancake(3)
-server-1  | [INFO] [03/28/2024 17:34:21.833] [ForkJoinPool.commonPool-worker-19] [CoordinatedShutdown(akka://four-chefs)] Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+server-1  | Frying pan 2: HalfCookedPancake(2)
+server-1  | Pancake ready: Pancake(1)
+server-1  | Pancake ready: Pancake(3)
+server-1  | Pancake ready: Pancake(2)
+server-1  | [INFO] [10/21/2024 22:45:52.153] [ForkJoinPool.commonPool-worker-19] [CoordinatedShutdown(akka://four-chefs)] Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
 server-1  | Pancakes are done!
 server-1  | ***** Finished running the akka stream four chefs example *****
+server-1  | 
+server-1  | 
+server-1  | ***** Running the akka stream splitter example *****
+server-1  | Pancake ready: BlueberryPancake(0)
+server-1  | Pancake ready: BananaPancake(1)
+server-1  | Pancake ready: ChocolateChipPancake(2)
+server-1  | Pancake ready: BlueberryPancake(3)
+server-1  | Pancake ready: ChocolateChipPancake(5)
+server-1  | Pancake ready: ChocolateChipPancake(8)
+server-1  | Pancake ready: BananaPancake(4)
+server-1  | Pancake ready: BananaPancake(7)
+server-1  | Pancake ready: BlueberryPancake(6)
+server-1  | Pancakes are done!
+server-1  | ***** Finished running the akka stream splitter example *****
+server-1  | 
+server-1  | 
+server-1  | [INFO] [10/21/2024 22:45:52.192] [ForkJoinPool.commonPool-worker-19] [CoordinatedShutdown(akka://splitter)] Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+server-1  | ***** Running the akka stream batch splitter example *****
+server-1  | Pancake batch ready: PancakeBatch [ticketId=1, pancakes=[BananaPancake(1)]]
+server-1  | Pancake batch ready: PancakeBatch [ticketId=2, pancakes=[BlueberryPancake(2), BlueberryPancake(3)]]
+server-1  | Pancake batch ready: PancakeBatch [ticketId=3, pancakes=[BlueberryPancake(4), ChocolateChipPancake(5), ChocolateChipPancake(6), ChocolateChipPancake(7)]]
+server-1  | Pancake batch ready: PancakeBatch [ticketId=4, pancakes=[BlueberryPancake(8)]]
+server-1  | Pancake batch ready: PancakeBatch [ticketId=5, pancakes=[BlueberryPancake(11), ChocolateChipPancake(9), ChocolateChipPancake(10)]]
+server-1  | Pancakes are done!
+server-1  | ***** Finished running the akka stream batch splitter example *****
+server-1  | [INFO] [10/21/2024 22:45:52.222] [ForkJoinPool.commonPool-worker-19] [CoordinatedShutdown(akka://batch-splitter)] Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
 server-1 exited with code 0
+
 ```
