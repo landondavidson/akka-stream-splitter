@@ -13,6 +13,20 @@ public class PancakeOrder {
         return addIn;
     }
 
+    public ScoopOfBatter getScoop() {
+        switch (addIn) {
+            case CHOCOLATE_CHIP:
+                return new ScoopOfChocolateChipBatter(index);
+            case BANANA:
+                return new ScoopOfBananaBatter(index);
+            case BLUEBERRY:
+                return new ScoopOfBlueberryBatter(index);
+            default:
+                throw new IllegalArgumentException("Unknown addIn: " + addIn);
+        }
+    }
+
+
     public int getIndex() {
         return index;
     }
